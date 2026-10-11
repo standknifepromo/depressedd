@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>depressed</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="browser-left">
+        <div class="nav-icon small-icon">←</div>
+        <div class="nav-icon small-icon">→</div>
+        <div class="nav-icon small-icon">↻</div>
+      </div>
+
+      <div class="address-bar-wrap">
+        <div class="address-bar">
+          <span class="domain-icon">◌</span>
+          <span class="domain-text">depressed</span>
+        </div>
+      </div>
+
+      <div class="browser-right">
+        <div class="nav-icon small-icon">☆</div>
+        <div class="nav-icon small-icon">⎈</div>
+        <div class="nav-icon small-icon">☰</div>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="side-telegram">
+        <a href="https://t.me/destroid21" target="_blank" rel="noopener noreferrer">@destroid21</a>
+      </div>
+
+      <section class="activation-card">
+        <h1>АКТИВАЦИЯ</h1>
+        <p>Промо начинается на <span>DEPRESSED_</span>XXXXXX</p>
+
+        <label class="input-shell" aria-label="Промокод">
+          <input
+            id="codeInput"
+            type="text"
+            maxlength="24"
+            spellcheck="false"
+            autocomplete="off"
+            placeholder="DEPRESSED_XXXXXX"
+          />
+        </label>
+
+        <div id="statusMessage" class="status-message" aria-live="polite"></div>
+
+        <button id="checkButton" type="button">ПРОВЕРИТЬ КОД</button>
+      </section>
+    </main>
+
+    <div id="rewardModal" class="modal hidden" aria-hidden="true">
+      <div class="modal-box">
+        <button id="closeModal" class="close-button" type="button" aria-label="Закрыть">×</button>
+        <h2>ПОЗДРАВЛЯЕМ!</h2>
+        <p id="rewardText">Вы выиграли 5000 голды</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
